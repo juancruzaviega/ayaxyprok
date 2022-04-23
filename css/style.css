@@ -1,0 +1,1003 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+/* body */
+body {
+    background-color: black;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: "nav nav nav nav"
+        "main main main main"
+        "main main main main"
+        "main main main main"
+        "main main main main"
+        "footer footer footer footer";
+}
+
+/* header */
+header {
+    grid-area: nav;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    margin: 10px;
+    padding: auto;
+    border: solid whitesmoke 2px;
+}
+
+.pages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.pages a:hover {
+    color: rgb(0, 0, 0);
+    background-color: aliceblue;
+}
+
+.pages a:active {
+    color: rgb(255, 196, 0)
+}
+
+.menu {
+    display: grid;
+    grid-template-areas: "logo none none nav-dos";
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo {
+    grid-area: logo;
+
+}
+
+.logo-dos {
+
+    height: auto;
+    width: 50%;
+    margin: 2%;
+}
+
+.nav-dos {
+    grid-area: nav-dos;
+    display: flex;
+
+}
+
+/* main */
+/* main index */
+
+main {
+    grid-area: main;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-areas: "ayaxyprok ayaxyprok ayaxyprok ayaxyprok"
+        "conciertos conciertos conciertos conciertos"
+        "concierto-uno none none concierto-dos"
+        "concierto-tres none none concierto-cuatro";
+}
+
+
+.ayaxyprok {
+    grid-area: ayaxyprok;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.imgayp {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conciertos {
+    grid-area: conciertos;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.concierto-uno {
+    grid-area: concierto-uno;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.concierto-dos {
+    grid-area: concierto-dos;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.concierto-tres {
+    grid-area: concierto-tres;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.concierto-cuatro {
+    grid-area: concierto-cuatro;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+/* main shows */
+
+.main-grid-shows {
+    display: grid;
+    grid-template-areas: "eventos-uno"
+        "eventos-dos"
+        "eventos-tres";
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: start;
+    padding: 10%;
+
+}
+
+.shows {
+    display: flex;
+    margin: 20px;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.shows-dos {
+    display: flex;
+    margin: 10px;
+}
+
+.eventos-uno {
+    grid-area: eventos-uno;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.eventos-dos {
+    grid-area: eventos-dos;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.eventos-tres {
+    grid-area: eventos-tres;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.entradas {
+    text-decoration: none;
+    margin: 5px;
+    color: rgb(86, 230, 255);
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.entradas:hover {
+    color: rgb(40, 17, 248)
+}
+
+.entradas:active {
+    color: rgb(255, 218, 6);
+}
+
+/* main bio */
+
+.main-grid-bio {
+    display: grid;
+    grid-template-areas: "img-bio img-bio img-bio"
+        "text-bio text-bio text-bio";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.img-bio {
+    grid-area: img-bio;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.text-bio {
+    grid-area: text-bio;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+p {
+    margin: 30px 100px 10px 100px;
+}
+
+/* main musica */
+
+.main-grid-musica {
+    display: grid;
+    grid-template-areas: "discos discos discos discos"
+        "ayax-discos ayax-discos ayax-discos ayax-discos"
+        "prok-discos prok-discos prok-discos prok-discos"
+        "disco-duo disco-duo disco-duo disco-duo";
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.discos {
+    grid-area: discos;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.ayax-discos {
+    grid-area: ayax-discos;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.prok-discos {
+    grid-area: prok-discos;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.disco-duo {
+    grid-area: disco-duo;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.ayp {
+    margin: 10px;
+    text-decoration: underline;
+}
+
+h3 {
+    margin: 20px;
+}
+
+.img-discos {
+    height: auto;
+    width: auto;
+}
+
+/* main contacto */
+
+.main-grid-contacto {
+    display: grid;
+    grid-template-areas: "info-form info-form"
+        "data data";
+}
+
+.info-form {
+    grid-area: info-form;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+
+}
+
+.data {
+    grid-area: data;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.campo {
+    padding: 10px;
+    margin: 10px;
+}
+
+.btn-enviar {
+    padding: 10px;
+    margin: 10px;
+}
+
+.mensaje {
+    margin: 10px;
+    padding: 10px;
+}
+
+/* main */
+
+/* footer */
+.pie {
+    display: grid;
+    grid-template-areas: "copyr copyr copyr copyr"
+        "redes-uno none none redes-dos";
+}
+
+footer {
+    grid-area: footer;
+    margin: 50px;
+}
+
+.copyr {
+    grid-area: copyr;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.redes-uno {
+    grid-area: redes-uno;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.redes-dos {
+    grid-area: redes-dos;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.redes {
+    display: flex;
+    width: 30%;
+
+}
+
+
+
+
+/* empezando responsive  */
+
+
+/* tablet */
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: black;
+        color: aliceblue;
+        text-decoration: none;
+    }
+
+    /* index */
+    .grid {
+        display: grid;
+
+        grid-template-areas: "nav nav nav"
+            "main main main"
+            "main main main"
+            "main main main"
+            "main main main"
+            "footer footer footer";
+    }
+
+    /* header */
+    header {
+        grid-area: nav;
+
+
+    }
+
+    nav a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: large;
+        margin: 5px;
+        padding: auto;
+        border: solid whitesmoke 2px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .pages {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .pages a:hover {
+        color: rgb(0, 0, 0);
+        background-color: aliceblue;
+    }
+
+    .pages a:active {
+        color: rgb(255, 196, 0)
+    }
+
+    .menu {
+        display: grid;
+        grid-template-areas: "logo none nav-dos";
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .logo {
+        grid-area: logo;
+
+    }
+
+    .logo-dos {
+
+        height: auto;
+        width: 50%;
+        margin: 2%;
+    }
+
+    .nav-dos {
+        grid-area: nav-dos;
+        display: flex;
+
+    }
+
+    /* main */
+    main {
+        grid-area: main;
+    }
+
+    .main-grid {
+        display: grid;
+        grid-template-areas: "ayaxyprok ayaxyprok ayaxyprok"
+            "conciertos conciertos conciertos"
+            "concierto-uno none concierto-dos"
+            "concierto-tres none concierto-cuatro";
+    }
+
+
+    .ayaxyprok {
+        grid-area: ayaxyprok;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .imgayp {
+        margin: 20px;
+    }
+
+    .conciertos {
+        grid-area: conciertos;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .concierto-uno {
+        grid-area: concierto-uno;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .concierto-dos {
+        grid-area: concierto-dos;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .concierto-tres {
+        grid-area: concierto-tres;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .concierto-cuatro {
+        grid-area: concierto-cuatro;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    /* footer */
+    .pie {
+        display: grid;
+        grid-template-areas: "copyr copyr copyr"
+            "redes-uno none redes-dos";
+    }
+
+    footer {
+        grid-area: footer;
+        margin: 50px;
+    }
+
+    .copyr {
+        grid-area: copyr;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .redes-uno {
+        grid-area: redes-uno;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-end;
+    }
+
+    .redes-dos {
+        grid-area: redes-dos;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-start;
+    }
+
+    .redes {
+        display: flex;
+        width: 30%;
+
+    }
+
+
+/* music-main */
+.main-grid-musica {
+    display: grid;
+    grid-template-areas: "discos discos discos"
+        "ayax-discos ayax-discos ayax-discos"
+        "prok-discos prok-discos prok-discos"
+        "disco-duo disco-duo disco-duo";
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.discos {
+    grid-area: discos;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.ayax-discos {
+    grid-area: ayax-discos;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.prok-discos {
+    grid-area: prok-discos;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.disco-duo {
+    grid-area: disco-duo;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.ayp {
+    margin: 10px;
+    text-decoration: underline;
+}
+
+h3 {
+    margin: 20px;
+}
+
+.img-discos {
+    height: auto;
+    width: auto;
+}
+
+
+}
+
+
+
+
+/* mobile */
+@media screen and (max-width: 320px) {
+    .grid {
+        display: grid;
+        grid-template-areas: "nav nav"
+            "main main"
+            "main main"
+            "main main"
+            "main main"
+            "footer footer";
+    }
+/* index */
+
+/* header */
+    header {
+        grid-area: nav;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: x-large;
+        margin: 10px;
+        padding: auto;
+        border: solid whitesmoke 2px;
+    }
+
+    .pages {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: space-around
+    }
+
+    .pages a:hover {
+        color: rgb(0, 0, 0);
+        background-color: aliceblue;
+    }
+
+    .pages a:active {
+        color: rgb(255, 196, 0)
+    }
+
+    .menu {
+        display: grid;
+        grid-template-areas: "logo nav-dos";
+        align-content: center;
+        justify-content: start;
+        align-items: center;
+        justify-items: center
+    }
+
+    .logo {
+        grid-area: logo;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .logo-dos {
+
+        height: auto;
+        width: 50%;
+        margin: 2%;
+    }
+
+    .nav-dos {
+        grid-area: nav-dos;
+        display: flex;
+    }
+/* main */
+    main {
+        grid-area: main;
+    }
+    
+    .main-grid {
+        display: grid;
+        grid-template-areas: "ayaxyprok ayaxyprok"
+            "conciertos conciertos"
+            "concierto-uno concierto-dos"
+            "concierto-tres concierto-cuatro";
+    }
+
+    .ayaxyprok {
+        grid-area: ayaxyprok;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .imgayp {
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .conciertos {
+        grid-area: conciertos;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    
+    .concierto-uno {
+        grid-area: concierto-uno;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+        padding: 10px;
+    }
+    
+    .concierto-dos {
+        grid-area: concierto-dos;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+        padding: 10px;
+    }
+    
+    .concierto-tres {
+        grid-area: concierto-tres;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+        padding: 10px;
+    }
+    
+    .concierto-cuatro {
+        grid-area: concierto-cuatro;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        align-items: center;
+        margin: 20px;
+        padding: 10px;
+    }
+    /* footer */
+    .pie {
+        display: grid;
+        grid-template-areas: "copyr copyr"
+        "redes-uno redes-dos";
+    }
+
+    footer {
+        grid-area: footer;
+        margin: 50px;
+    }
+
+    .copyr {
+        grid-area: copyr;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .redes-uno {
+        grid-area: redes-uno;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-end;
+    }
+
+    .redes-dos {
+        grid-area: redes-dos;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-start;
+    }
+
+    .redes {
+        display: flex;
+        width: 30%;
+
+    }
+
+    /* music-main */
+
+    .main-grid-musica {
+        display: grid;
+        grid-template-areas: "discos discos"
+            "ayax-discos ayax-discos"
+            "prok-discos prok-discos"
+            "disco-duo disco-duo";
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .discos {
+        grid-area: discos;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-around;
+        margin: 20px;
+    }
+    
+    .ayax-discos {
+        grid-area: ayax-discos;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .prok-discos {
+        grid-area: prok-discos;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .disco-duo {
+        grid-area: disco-duo;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .ayp {
+        margin: 10px;
+        text-decoration: underline;
+    }
+    
+    h3 {
+        margin: 20px;
+    }
+    
+    .img-discos {
+        height: auto;
+        width: auto;
+    }
+}
