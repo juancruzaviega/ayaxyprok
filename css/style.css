@@ -1003,3 +1003,8 @@ h3 {
 }
 
 /* inicio rama-gradiente  */
+
+
+footer{
+    background-image: linear-gradient(to right, black, grey, black, gray, black);
+}
