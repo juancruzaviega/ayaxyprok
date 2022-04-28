@@ -51,13 +51,15 @@ nav a {
     color: rgb(255, 196, 0)
 }
 
-.menu {
-    display: grid;
+.menu {display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* display: grid;
     grid-template-areas: "logo none none nav-dos";
     align-content: center;
     justify-content: space-between;
     align-items: center;
-    justify-items: center;
+    justify-items: center; */
 }
 
 .logo {
@@ -83,6 +85,7 @@ nav a {
 
 main {
     grid-area: main;
+    
 }
 
 .main-grid {
@@ -1007,4 +1010,20 @@ h3 {
 
 footer{
     background-image: linear-gradient(to right, black, grey, black, gray, black);
+}
+
+/* inicio bootstrap */
+.logo-inicio{
+    height: 100px;
+}
+
+.bg-color{
+    background-color: black;
+}
+nav a:hover{
+    background-color: gray;
+    
+}
+nav a:active{
+    background-color: yellow;
 }
